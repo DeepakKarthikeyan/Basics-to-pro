@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: deepak-daemon
+spec:
+  selector:
+    matchLabels:
+      name: deepak-daemon-pod
+  template:
+    metadata:
+      labels:
+        name: deepak-daemon-pod
+    spec:
+      containers:
+      - image: nginx
+        name: daemonset-deepak-second
