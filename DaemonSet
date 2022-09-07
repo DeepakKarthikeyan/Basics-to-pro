@@ -5,11 +5,11 @@ metadata:
 spec:
   selector:
     matchLabels:
-      name: deepak-daemon-pod
+      tier: deepak-daemon-pod
   template:
     metadata:
       labels:
-        name: deepak-daemon-pod
+        tier: deepak-daemon-pod
     spec:
       containers:
       - image: nginx
